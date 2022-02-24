@@ -453,7 +453,7 @@ void loop2() {
     // FLASH LED DURING SIDEREAL TRACKING
 #if LED_STATUS == ON
     if (trackingState == TrackingSidereal) {
-      if (siderealTimer%20L == 0L) { if (ledOn) { digitalWrite(LEDnegPin,HIGH); ledOn=false; } else { digitalWrite(LEDnegPin,LOW); ledOn=true; } }
+      if (siderealTimer%20L == 0L) { if (ledOn) { digitalWrite(LEDnegPin,LOW); ledOn=false; } else { digitalWrite(LEDnegPin,HIGH); ledOn=true; } }
     }
 #endif
 
@@ -652,7 +652,7 @@ void loop2() {
 
 #if LED_STATUS == ON
     // LED indicate PWR on 
-    if (trackingState != TrackingSidereal) if (!ledOn) { digitalWrite(LEDnegPin,LOW); ledOn=true; }
+    if (trackingState != TrackingSidereal) if (!ledOn) { digitalWrite(LEDnegPin,HIGH); ledOn=true; }
 #endif
 #if LED_STATUS2 == ON
     // LED indicate STOP and GOTO
