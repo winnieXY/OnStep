@@ -71,7 +71,7 @@
 #undef ST4_INTERFACE
 #define ST4_INTERFACE                 ON //    OFF, ON, ON_PULLUP enables interface. <= 1X guides unless hand control mode.  Option
 #undef ST4_HAND_CONTROL                                          //         During goto btn press: aborts slew or continue meridian flip pause home
-#define ST4_HAND_CONTROL              ON//    OFF, ON for hand controller special features and SHC support.                 Option
+#define ST4_HAND_CONTROL              OFF//    OFF, ON for hand controller special features and SHC support.                 Option
 //         Hold [E]+[W] btns >2s: Guide rate   [E]-  [W]+  [N] trk on/off [S] sync
 //         Hold [N]+[S] btns >2s: Usr cat item [E]-  [W]+  [N] goto [S] snd on/off
 
@@ -200,4 +200,4 @@
 #undef  FEATURE4_PIN
 #define FEATURE4_PIN                  CHAIN //    OFF, AUX, CHAIN (ds2413 gpio1,) n. Where n=0 to 255 (pin#.)                   Adjust
 #undef  FEATURE4_DEFAULT_VALUE
-#define FEATURE4_DEFAULT_VALUE        OFF //    OFF, ON, n. Where n=0..255 for ANALOG_OUT purpose.   
+#define FEATURE4_DEFAULT_VALUE        ON //    OFF, ON, n. Where n=0..255 for ANALOG_OUT purpose.   
