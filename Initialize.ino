@@ -53,7 +53,7 @@ void initPins() {
 
   // light status LED (provides GND)
 #if LED_STATUS == ON
-  pinMode(LEDnegPin,OUTPUT); digitalWrite(LEDnegPin,LOW);
+  pinMode(LEDnegPin,OUTPUT); digitalWrite(LEDnegPin,HIGH);
   #ifdef LEDposPin
     pinMode(LEDposPin,OUTPUT); digitalWrite(LEDposPin,HIGH); // sometimes +5v is provided on a pin
   #endif

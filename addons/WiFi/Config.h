@@ -18,8 +18,8 @@
 
 //      Parameter Name              Value   Default  Notes                                                                      Hint
 // SERIAL PORTS --------------------------------------------------------------------------------------------------------------------
-#define SERIAL_BAUD_DEFAULT          9600 //   9600, Common baud rates for these parameters are 9600,19200,57600,115200.      Infreq
-#define SERIAL_BAUD                 57600 //  57600, Automatically uses 19200 if talking to a Mega2560 OnStep.                Infreq
+#define SERIAL_BAUD_DEFAULT        115200 //   9600, Common baud rates for these parameters are 9600,19200,57600,115200.      Infreq
+#define SERIAL_BAUD                115200 //  57600, Automatically uses 19200 if talking to a Mega2560 OnStep.                Infreq
                                           //         If establishing a link to OnStep was ***unsuccessful*** the ESP8266 may
                                           //         retain prior settings perhaps an SSID from factory defaults, for example.
 #define SERIAL_SWAP                  AUTO //   AUTO, Automatic check both, ON for swapped port or OFF for default port only.  Infreq
